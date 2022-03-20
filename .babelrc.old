@@ -1,0 +1,4 @@
+/** Enable this file to test using Babel instead of SWC. */
+{
+  "presets": ["next/babel"]
+}

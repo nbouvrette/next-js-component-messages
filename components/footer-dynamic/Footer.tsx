@@ -2,13 +2,13 @@ import dynamic from 'next/dynamic';
 import { useRouter } from 'next/router';
 import React from 'react';
 
-import { KeyValueObject } from '../pages';
+import { KeyValueObject } from '../../pages';
 import styles from './Footer.module.css';
 
 const enUS = dynamic(() => import('./Footer.en-US'));
 const frCA = dynamic(() => import('./Footer.fr-CA'));
 
-export default function Footer(): JSX.Element {
+export default function FooterDynamic(): JSX.Element {
   const { locale } = useRouter();
 
   let dynamicComponent: DynamicComponent;

@@ -1,5 +1,5 @@
 import type { GetStaticProps, GetStaticPropsContext, NextPage } from 'next';
-import Footer from '../components/Footer';
+import FooterTopLevelAwait from '../components/footer-top-level-await/Footer';
 
 const Home: NextPage<MessagesContext> = (context) => {
   process.env.nextJsStaticLocale = context.locale;
@@ -14,7 +14,7 @@ const Home: NextPage<MessagesContext> = (context) => {
       </div>
       <br></br>
       {context.messages.greeting}
-      <Footer></Footer>
+      <FooterTopLevelAwait></FooterTopLevelAwait>
     </div>
   );
 };
